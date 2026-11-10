@@ -9,7 +9,7 @@ MVP móvil multiplataforma de seguimiento nutricional con Expo SDK 58, React Nat
 - Android Studio/emulador Android, Xcode en macOS, o un navegador para ejecutar la versión web.
 
 ## Instalar y ejecutar
-
+hh
 ```bash
 npm install
 npx expo start
