@@ -1,6 +1,11 @@
-export type SexForEquation = 'female' | 'male';
-export type ActivityLevel = 'sedentary' | 'light' | 'moderate' | 'high' | 'veryHigh';
-export type MealType = 'Desayuno' | 'Comida' | 'Cena' | 'Tentempié';
+export type SexForEquation = "female" | "male";
+export type ActivityLevel =
+  | "sedentary"
+  | "light"
+  | "moderate"
+  | "high"
+  | "veryHigh";
+export type MealType = "Desayuno" | "Comida" | "Cena" | "Tentempié";
 
 export interface UserProfile {
   name: string;

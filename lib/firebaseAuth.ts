@@ -1,8 +1,16 @@
-import { createUserWithEmailAndPassword, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { auth } from '@/lib/firebase';
+import { auth } from "@/lib/firebase";
+import {
+    createUserWithEmailAndPassword,
+    sendPasswordResetEmail,
+    signInWithEmailAndPassword,
+    signOut,
+} from "firebase/auth";
 
 function requireAuth() {
-  if (!auth) throw new Error('Firebase aún no está configurado. Puedes continuar usando NutriBalance en modo local.');
+  if (!auth)
+    throw new Error(
+      "Firebase aún no está configurado. Puedes continuar usando NutriBalance en modo local.",
+    );
   return auth;
 }
 

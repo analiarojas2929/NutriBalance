@@ -1,9 +1,14 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { AppData } from '@/types';
+import type { AppData } from "@/types";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const STORAGE_KEY = '@nutribalance/data-v1';
+const STORAGE_KEY = "@nutribalance/data-v1";
 
-export const emptyAppData: AppData = { profile: null, meals: {}, water: {}, weights: [] };
+export const emptyAppData: AppData = {
+  profile: null,
+  meals: {},
+  water: {},
+  weights: [],
+};
 
 export async function loadAppData(): Promise<AppData> {
   const stored = await AsyncStorage.getItem(STORAGE_KEY);
